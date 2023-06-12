@@ -1,0 +1,8 @@
+name: Trenchant
+version: '${project.version}'
+main: rama.te.Trenchant
+api-version: 1.19
+authors: [ ImRama ]
+description: Trench enchantment for Minecraft
+commands:
+  trench:
