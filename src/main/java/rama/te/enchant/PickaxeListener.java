@@ -24,6 +24,9 @@ public class PickaxeListener implements Listener {
 
     @EventHandler
         public void blockBreakEvent(BlockBreakEvent e){
+        if(e.isCancelled()){
+            return;
+        }
         Material material = e.getBlock().getType();
         Player player = e.getPlayer();
         player.getInventory().getItemInMainHand();
